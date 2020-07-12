@@ -10,6 +10,7 @@ const AminusB = document.querySelector("#AminusB")
 const union = document.querySelector("#union")
 
 class mySet {
+
     constructor() {
         var collection = [];
 
