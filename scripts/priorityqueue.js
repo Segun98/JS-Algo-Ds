@@ -2,6 +2,7 @@ const output = document.querySelector(".output")
 const input = document.querySelector(".input")
 const form = document.querySelector("#form").addEventListener("submit", (e) => {
     e.preventDefault()
+
     if (!input.value) {
         return alert("can't be empty")
     }
