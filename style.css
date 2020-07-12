@@ -1,0 +1,27 @@
+ul {
+    list-style: none;
+}
+
+.del {
+    border: 1px solid red;
+    background: red;
+    color: white;
+    margin-left: 15px;
+    cursor: pointer;
+    padding: 0 5px;
+    border-radius: 4px;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width:700px) {
+    nav {
+        width: 50%;
+    }
+}

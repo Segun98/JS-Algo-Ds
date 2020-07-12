@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sets | JS Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/">Palindrome</a>
+            <a href="/set.html">Set</a>
+            <a href="/stacks.html">Stacks</a>
+            <a href="/priorityqueue.html">Pqueue</a>
+        </nav>
+    </header>
+    <section style="text-align: center;">
+        <h3>JS Practice</h3>
+    </section>
+    <section style="text-align: center;">
+        <h3>Stack Data Structure</h3>
+        <p>Add, Remove, Peek items in the stack</p>
+    </section>
+    <section style="text-align: center;">
+        <form id="submitStack" autocomplete="off">
+            <input type="text" name="add" id="input">
+            <button type="submit">Add</button>
+        </form>
+        <p>Your Stack :</p>
+        <span>Items:</span> [ <span id="yourStack"></span> ]
+        <br> <span>No. Of Items: </span><span id="stackLength"></span>
+        <br>
+        <button id="remove">Remove From Stack</button>
+        <p id="error" style="color: red;"></p>
+    </section>
+    <script src="/scripts/stacks.js"></script>
+</body>
+
+</html>

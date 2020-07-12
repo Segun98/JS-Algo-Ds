@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sets | JS Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/">Palindrome</a>
+            <a href="/set.html">Set</a>
+            <a href="/stacks.html">Stacks</a>
+            <a href="/priorityqueue.html">Pqueue</a>
+        </nav>
+    </header>
+    <section style="text-align: center;">
+        <h3>JS Practice</h3>
+    </section>
+    <section style="text-align: center;">
+        <h3>Set Data Structure</h3>
+    </section>
+    <section style="text-align: center;">
+        <p id="error" style="color: red;"></p>
+        <form id="addSetA" autocomplete="off">
+            <input type="text" id="inputSetA">
+            <button type="submit">Add A</button>
+        </form>
+        <br>
+        <form id="addSetB" autocomplete="off">
+            <input type="text" id="inputSetB">
+            <button type="submit">Add B</button>
+        </form>
+    </section>
+    <br>
+    <section style="text-align: center;">
+        <span>Set A: </span> <span id="setAvalues" style="color: rgb(72, 180, 216);"></span>
+        <br>
+        <span>Set B: </span> <span id="setBvalues" style="color: rgb(118, 216, 72);"></span>
+    </section>
+    <section style="text-align: center;">
+        <span id="aSubsB"></span>
+        <span id="bSubsA"></span>
+        <br>
+        <span> Where Both Sets intercept: </span> <span id="AinterB"></span>
+        <br>
+        <span>Difference: </span> <span id="AminusB"></span>
+        <br>
+        <span>Union: </span> <span id="union"></span>
+    </section>
+    <script src="/scripts/sets.js"></script>
+</body>
+
+</html>

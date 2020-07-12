@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+body {
+    display: flex;
+    display: flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.nav {
+    position: absolute;
+    top: 10px;
+    text-align: center;
+}
+
+.outer_circle {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 50px 95px 0;
+    background: black;
+}
+
+.mascot_wrap {
+    margin-bottom: -25px;
+}
+
+.mascot_wrap-head {
+    background: white;
+    padding: 80px;
+    border-radius: 38%;
+    position: relative;
+    height: 10px;
+}
+
+.mascot_wrap-head::before {
+    content: "";
+    background: white;
+    padding: 20px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    border-radius: 50% 50% 0 50%;
+    transform: rotate(180deg);
+}
+
+.mascot_wrap-head::after {
+    content: "";
+    background: white;
+    padding: 20px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(180deg);
+
+}
+
+.mascot_wrap-body {
+    background: white;
+    margin: auto;
+    padding: 2px;
+    width: 80px;
+    height: 130px;
+    border-radius: 25px 25px 0 0;
+    position: relative;
+}
+
+.mascot_wrap-body::before {
+    content: "";
+    background: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 18px;
+    left: -5px;
+    border-radius: 50%;
+}
+
+.mascot_wrap-body::after {
+    content: "";
+    background: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 18px;
+    right: -5px;
+    border-radius: 50%;
+}
+
+.mascot_wrap-hand {
+    background: white;
+    position: absolute;
+    left: -60px;
+    top: 25px;
+    padding: 10px;
+    height: 10px;
+    width: 80px;
+    transform: skew(45deg);
+    border-radius: 20px;
+    border-radius: 48%;
+
+}
+
+.mascot_wrap-hand::before {
+    content: "";
+    padding: 17px;
+    background: white;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    transform: skew(40deg);
+    border-radius: 48%;
+    animation: hand ease-in infinite 3s;
+}
+
+@keyframes hand {
+    0% {
+        transform: translateX(10px);
+    }
+
+    50% {
+        transform: translateX(5px);
+
+    }
+
+    100% {
+        transform: translateX(-3px);
+    }
+}
