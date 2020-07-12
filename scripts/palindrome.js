@@ -5,6 +5,7 @@ const result = document.querySelector("#result")
 
 form.addEventListener("submit", function Output(e) {
     e.preventDefault()
+
     if (result) {
         setTimeout(() => {
             result.textContent = ""
