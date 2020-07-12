@@ -56,6 +56,7 @@ submitStack.addEventListener("submit", (e) => {
         input.value = ""
     } catch (error) {
         errormsg.textContent = error.message
+
         if (error) {
             setTimeout(() => {
                 errormsg.textContent = ""
