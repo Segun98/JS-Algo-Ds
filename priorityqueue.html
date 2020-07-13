@@ -16,6 +16,12 @@
             <a href="/JS-Algo-Ds/stacks.html">Stacks</a>
             <a href="/JS-Algo-Ds/priorityqueue.html">Pqueue</a>
         </nav>
+        <!-- <nav>
+            <a href="/">Palindrome</a>
+            <a href="/set.html">Set</a>
+            <a href="/stacks.html">Stacks</a>
+            <a href="/priorityqueue.html">Pqueue</a>
+        </nav> -->
     </header>
     <section style="text-align: center;">
         <h3>JS Practice</h3>
@@ -23,20 +29,29 @@
     <section style="text-align: center;">
         <h3>PriorityQueue Data Structure</h3>
         <p>Add, Remove, Peek the queue</p>
+        <p> Items are arranged according to their order of priority which is determined by the number you input, the
+            lesser numbr would always come first and be removed first </p>
     </section>
     <section style="text-align: center;">
-        <form id="submitStack" autocomplete="off">
-            <input type="text" name="add" id="input">
-            <button type="submit">Add</button>
+        <form id="submit" autocomplete="off">
+            <label for="formOne">Name</label>
+            <input type="text" name="add" id="inputOne" required>
+            <br>
+            <br>
+            <label for="formOne">Priority Order (Number)</label>
+            <input type="number" name="add" id="inputTwo" required>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
         </form>
-        <p>Queue :</p>
+
+        <p>check console for a cleaner queue</p>
         <span>Items:</span> [ <span id="yourStack"></span> ]
-        <br> <span>No. Of Items: </span><span id="stackLength"></span>
+        <br> <span>No. Of Items: </span><span id="stackLength">0</span>
         <br>
-        <button id="remove">Remove From Stack</button>
-        <p id="error" style="color: red;"></p>
+        <button id="remove">Dequeue</button>
     </section>
-    <div>
+    <!-- <div>
         <form id="form">
             <input type="text" name="input" class="input">
             <button type="submit">submit</button>
@@ -48,8 +63,9 @@
 
         </ul>
 
-    </section>
+    </section> -->
     <script src="/JS-Algo-Ds/scripts/priorityqueue.js"></script>
+    <!-- <script src="/scripts/priorityqueue.js"></script> -->
 </body>
 
 </html>
