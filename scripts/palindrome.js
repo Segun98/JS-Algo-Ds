@@ -20,7 +20,7 @@ form.addEventListener("submit", function Output(e) {
 })
 const palindromeCheck = () => {
     let stack = []
-    let word = input.value
+    let word = input.value.trim().toLocaleLowerCase()
     let reverseWord = ""
     for (let i = 0; i < word.length; i++) {
         stack.push(word[i])
